@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-header{
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-header > section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header > small, .App-header > p{
+  color: #ccc;
+}
+section {
+  width: 100%;
+}
+.List{
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  width: 60%;
+  background-color: #b3fff4;
+  padding: 1em;
+  border-radius: .5em;
+}
+.App-header article{
+  font-size: calc(10px + 1vmin);
+  max-width: 100%;
+  margin: 2em;
+}
+article > div{
+  margin: 0 auto;
+  padding: 1em;
+  width: 600px;
+}
+article figure{
+  padding: 2em 8em;
+}
+.List-item{
+  display: flex;
+}
+.List-item > a{
+  width: 100%;
+}
+.card-content{
+  background-color: #fff;
+}
+.title{
+  margin-top: 1em;
+  text-shadow: 2px 2px 2px #fff;
+}
+@media (max-width: 800px) {
+  .List{
+    width: 95%;
+  }
+}
